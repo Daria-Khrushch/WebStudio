@@ -1,0 +1,83 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  position: relative;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media screen and (min-width: $tablet-width) {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &__contacts {
+    display: none;
+
+    @media screen and (min-width: $tablet-width) {
+      display: block;
+    }
+    @media screen and (min-width: $desktop-width) {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    margin-right: 0;
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 88px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      margin-right: 93px;
+    }
+  }
+}
+
+.header__button {
+  position: absolute;
+  display: inline-flex;
+  right: 15px;
+  top: 5px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  & .icon__cross {
+    display: none;
+  }
+
+  &.is-open .icon__cross {
+    display: block;
+  }
+
+  &.is-open .icon__menu {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo {
+  color: $title-text-color;
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
