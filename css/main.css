@@ -52,6 +52,106 @@ a {
   }
 }
 
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-position: center;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mob.jpg);
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mob@2x.jpg);
+    background-size: 480px 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
+    background-size: 768px 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
+  }
+}
+
+@media (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop@2x.jpg);
+    background-size: 1600px 600px;
+  }
+}
+
+.hero__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 360px;
+  color: #ffffff;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+@media (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
+}
+
+.hero__button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: #2196f3;
+  border-radius: 4px;
+  border: #2196f3;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__button:focus, .hero__button:hover {
+  color: #2196f3;
+  background-color: #ffffff;
+}
+
 .body {
   margin-top: 0;
   margin-bottom: 0;
