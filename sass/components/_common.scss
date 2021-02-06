@@ -32,9 +32,13 @@
 
   color: $title-text-color;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 36px;
+  }
 }
 
 .section {

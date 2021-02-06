@@ -1,0 +1,125 @@
+.team {
+  background: $main-background-color;
+}
+
+.member {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__item {
+    width: 450px;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: $tablet-width) {
+      width: calc((100% - 30px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 270px;
+      margin-bottom: 0;
+      margin-right: 30px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.agent {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+
+  background-color: $white-color;
+
+  &__name {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.member-photo {
+  display: block;
+  width: 450px;
+  height: 460px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 100%;
+    height: 374px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 100%;
+    height: 260px;
+  }
+}
+
+.agent__job {
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.networks__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.networks__item {
+  @include centeredFlex(inline-flex);
+}
+
+.networks__link {
+  @include centeredFlex(inline-flex);
+
+  width: 44px;
+  height: 44px;
+
+  color: #afb1b8;
+
+  border-radius: 50%;
+  transition-property: color;
+  transition-duration: $animation-duration;
+  transition-timing-function: $animation-type;
+}
+
+.networks__link:hover,
+.networks__link:focus {
+  color: #ffffff;
+  background-color: $accent-color;
+}
+
+.networks__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: $animation-duration;
+  transition-timing-function: $animation-type;
+}
