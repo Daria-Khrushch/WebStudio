@@ -3,14 +3,14 @@
 }
 
 .container {
-  width: 450px;
+  max-width: 450px;
   padding: 0 15px;
   @media screen and (min-width: $tablet-width) {
-    width: 737px;
+    max-width: 737px;
     margin: 0 auto;
   }
   @media screen and (min-width: $desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -40,7 +40,6 @@
     font-size: 36px;
   }
 }
-
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
