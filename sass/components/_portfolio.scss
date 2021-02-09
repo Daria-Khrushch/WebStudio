@@ -7,6 +7,10 @@
     margin-bottom: 30px;
     justify-content: center;
   }
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 
   &__item {
     margin-bottom: 15px;

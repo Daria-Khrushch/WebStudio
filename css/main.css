@@ -44,21 +44,19 @@ a {
 }
 
 .container {
-  max-width: 450px;
+  width: 480px;
   padding: 0 15px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 737px;
-    margin: 0 auto;
+    width: 737px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 1200px;
   }
 }
 
@@ -1411,6 +1409,13 @@ a {
 @media screen and (min-width: 768px) {
   .buttons {
     margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons {
+    margin-bottom: 50px;
     justify-content: center;
   }
 }
