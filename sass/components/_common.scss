@@ -1,0 +1,50 @@
+.logostart {
+  color: $accent-color;
+}
+
+.container {
+  width: 480px;
+  padding: 0 15px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 737px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.img_block {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 36px;
+  }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
