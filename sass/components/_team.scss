@@ -1,5 +1,14 @@
 .team {
   background: $main-background-color;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    @media screen and (min-width: $desktop-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
 }
 
 .member {
